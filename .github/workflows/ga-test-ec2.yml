@@ -1,15 +1,15 @@
 name: Push-to-EC2-Test
 
 # Пушить только на изменения в ветке test
-on:
-  push:
-    branches:
-      - test
-  pull_request:
-    branches:
-      - main
-    paths:
-      - ".github/workflows/ga-test-ec2.yml"
+on: workflow_dispatch
+#  push:
+#    branches:
+#      - test
+#  pull_request:
+#   branches:
+#     - main
+#   paths:
+#     - ".github/workflows/ga-test-ec2.yml"
 
 jobs:
   deploy:
